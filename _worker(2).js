@@ -25,10 +25,11 @@ async function handleRequest(request) {
   const sources = [
     `https://www.google.com/s2/favicons?domain=${domain}&sz=50`,
     `https://icons.duckduckgo.com/ip3/${domain}.ico`,
-    `https://api.iconify.design/${domain}.ico`, // 新增的来源
-    `https://www.faviconkit.com/favicon/${domain}`, // 新增的来源
-    `https://www.favicon.cc/api/favicon?url=${domain}`, // 新增的来源
-    `https://www.faviconfox.com/api/geticon.php?url=${domain}&size=32` // 新增的来源
+    `https://api.iconify.design/${domain}.ico`,
+    `https://www.faviconkit.com/favicon/${domain}`,
+    `https://www.favicon.cc/api/favicon?url=${domain}`,
+    `https://www.faviconfox.com/api/geticon.php?url=${domain}&size=32`,
+    `https://icon.horse/icon/${domain}` // 新增的来源
   ]
   const modifiedRequestInit = {
     method: request.method,
